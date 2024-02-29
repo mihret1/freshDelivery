@@ -5,7 +5,7 @@ function Navbar() {
 
     useEffect(()=>{
         const handleTrasparency=()=>{
-            if(window.scrollY >=90){
+            if(window.scrollY >= 300){
                 setIsTransparent(true)
             }else{
                 setIsTransparent(false)
@@ -15,17 +15,27 @@ function Navbar() {
         window.addEventListener('scroll',handleTrasparency)
         return()=>{window.removeEventListener('scroll',handleTrasparency)}
     },[])
-  return (
-    <>
-  {  <div>
-        <div className="h-7 bg-green-800">hello</div>
-        <div className=" bg-slate-400 h-[115px] ">hello</div>
-        <div className="h-14 bg-slate-300"></div>
-    </div>}
 
-    <div className='h-[120px] bg-red-500'></div>
-    </>
+
+  return (
+    <div>
+
+    {!isTransparet ?  
+    <div className=''>
+        <div className={`h-7 bg-gradient-to-b from-[#218B67] to-[#37bd91]   w-[100%]`}>hello</div>
+        <div className=" bg-slate-400 h-[100px] ">hello</div>
+        <div className="h-14 bg-slate-300"></div>
+    </div> 
+    :
+    <div className='fixed w-[100%]'>
+    <div className={`h-7 bg-[#218B67] `}>hello</div>
+
+   <div className={`h-[100px] ${isTransparet && 'fixed'}  w-[100%] bg-red-500`}></div> 
+   </div>
+    }    
+</div>
   )
+
 }
 
 export default Navbar
