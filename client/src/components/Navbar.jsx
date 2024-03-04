@@ -26,8 +26,7 @@ function Navbar() {
 
     {!isTransparet ?  
     <div className=''>
-        <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>
-           
+        <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
            <div className='flex flex-row gap-3 text-white'>
                 <button><FontAwesomeIcon icon={faFacebookF} /></button>
                 <button> <FontAwesomeIcon icon={faTwitter} /></button>
@@ -40,24 +39,33 @@ function Navbar() {
            <div className='text-white'>
              <button><FontAwesomeIcon icon={faFacebookF} /></button>
            </div>
-           </div>
-          <div className=" bg-white  border-b h-[120px] flex  justify-around items-center">
+        </div>
+
+          <div className=" bg-white  border-b h-[120px] flex  justify-around items-center ">
             <div className='flex'>
-                <img src={logo1} className='h-[100px]'/>
+                <img src={logo1} className='h-[100px] max-md:h-[70px]'/>
                 <div className=' flex flex-col justify-center gap-1'>
-                    <h1 className='font-bold text-3xl'>Travel Agency</h1>
+                    <h1 className='font-bold text-3xl max-md:text-2xl'>Travel Agency</h1>
                     <p className=''>Ethiopian Tour and travel website</p>
 
                 </div>
             </div>
-            <div className='flex flex-col items-end'>
+            <div className='flex flex-col items-end max-sm:mr-2'>
                 <p>call us? we are open 24/7</p>
-                <h1 className='text-green-700 font-bold text-xl'>(+251)934567892 </h1>
+                <h1 className='text-green-700 font-bold text-xl max-md:text-lg'>(+251)934567892 </h1>
             </div>
           </div>
-         <div className="h-16">
+
+         <div className="h-16 max-lg:flex max-lg:flex-row max-lg:justify-end max-lg:items-center max-lg:mr-[5%]">
            
-           <div className="  flex flex-row  gap-3 justify-center pt-[1%] text-lg font-semibold">
+           <button className='hidden max-lg:flex flex-row'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+              </svg>
+
+          </button>
+
+           <div className=" hidden lg:flex flex-row  gap-3 justify-center pt-[1%] text-lg font-semibold">
 
                 <select className='border-none outline-none'>
                     <option value="0"><a href='/'>Type</a></option>
