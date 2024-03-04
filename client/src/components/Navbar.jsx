@@ -9,7 +9,7 @@ function Navbar() {
 
     useEffect(()=>{
         const handleTrasparency=()=>{
-            if(window.scrollY >= 300){
+            if(window.scrollY >= 250){
                 setIsTransparent(true)
             }else{
                 setIsTransparent(false)
@@ -25,7 +25,8 @@ function Navbar() {
     <div>
 
     {!isTransparet ?  
-    <div className=''>
+    
+      <div className=''>
         <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
            <div className='flex flex-row gap-3 text-white'>
                 <button><FontAwesomeIcon icon={faFacebookF} /></button>
@@ -43,17 +44,17 @@ function Navbar() {
 
           <div className=" bg-white  border-b h-[120px] flex  justify-around items-center ">
             <div className='flex'>
-                <img src={logo1} className='h-[100px] max-md:h-[70px]'/>
+                <img src={logo1} className='h-[100px] max-md:h-[80px]'/>
                 <div className=' flex flex-col justify-center gap-1'>
                     <h1 className='font-bold text-3xl max-md:text-2xl'>Travel Agency</h1>
                     <p className=''>Ethiopian Tour and travel website</p>
 
                 </div>
-            </div>
-            <div className='flex flex-col items-end max-sm:mr-2'>
+             </div>
+             <div className='flex flex-col items-end max-sm:mr-2'>
                 <p>call us? we are open 24/7</p>
                 <h1 className='text-green-700 font-bold text-xl max-md:text-lg'>(+251)934567892 </h1>
-            </div>
+             </div>
           </div>
 
          <div className="h-16 max-lg:flex max-lg:flex-row max-lg:justify-end max-lg:items-center max-lg:mr-[5%]">
@@ -141,17 +142,66 @@ function Navbar() {
          </div>
 
 
-    </div> 
+      </div> 
 
 
 
      
     :
     <div className='fixed w-[100%]'>
-    <div className={`h-7 bg-[#218B67] `}>hello</div>
 
-   <div className={`h-[100px] ${isTransparet && 'fixed'}  w-[100%] bg-red-500`}></div> 
-   </div>
+
+      <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
+              <div className='flex flex-row gap-3 text-white'>
+                    <button><FontAwesomeIcon icon={faFacebookF} /></button>
+                    <button> <FontAwesomeIcon icon={faTwitter} /></button>
+                    <button>  <FontAwesomeIcon icon={faInstagram} /></button>
+                    <button> <FontAwesomeIcon icon={faSkype} /></button>
+                  <button> <FontAwesomeIcon icon={faYoutube} /></button>
+                    <button> <FontAwesomeIcon icon={faTelegram} /></button>
+                  
+              </div>
+              <div className='text-white'>
+                <button><FontAwesomeIcon icon={faFacebookF} /></button>
+              </div>
+      </div>  
+  
+      <div className={`h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[5%]  w-[100%] bg-white flex flex-row items-center` }>
+          
+          <div className='flex'>
+                    <img src={logo1} className='h-[100px] '/>
+                    <div className=' flex flex-col justify-center gap-1'>
+                        <h1 className='font-bold text-3xl '>Travel Agency</h1>
+                        <p className=''>Ethiopian Tour and travel website</p>
+
+                    </div>
+          </div>
+          <div>
+              <nav className='flex flex-row gap-4 text-lg font-semibold'>
+                <a href='/'>Home</a>
+                <a href='/'>Type</a>
+                <a href='/'>Country</a>
+                <a href='/'>Packages</a>
+                <a href='/'>Service</a>
+                <a href='/'>About-Us</a>
+                <a href='/'>Blog</a>
+                <a href='/'>Contact</a>
+                <button className='px-8 bg-[#2cab81] py-1'><a href='/'>Login</a></button>
+
+
+
+              </nav> 
+          </div>    
+      
+      </div>
+     
+      
+      
+
+
+    </div>
+    
+    
     }    
 </div>
   )
