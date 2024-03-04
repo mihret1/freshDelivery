@@ -40,8 +40,8 @@ function Navbar() {
            <div className='text-white'>
              <button><FontAwesomeIcon icon={faFacebookF} /></button>
            </div>
-        </div>
-        <div className=" bg-white h-[120px] flex shadow-lg justify-around items-center">
+           </div>
+          <div className=" bg-white  border-b h-[120px] flex  justify-around items-center">
             <div className='flex'>
                 <img src={logo1} className='h-[100px]'/>
                 <div className=' flex flex-col justify-center gap-1'>
@@ -54,9 +54,27 @@ function Navbar() {
                 <p>call us? we are open 24/7</p>
                 <h1 className='text-green-700 font-bold text-xl'>(+251)934567892 </h1>
             </div>
-        </div>
-        <div className="h-14 bg-slate-300"></div>
-    </div> 
+          </div>
+         <div className="h-12">
+           <div className="custom-select p-5">
+                <select>
+                    <option value="0">Select car:</option>
+                    <option value="1">Audi</option>
+                    <option value="2">BMW</option>
+                    <option value="3">Citroen</option>
+                    <option value="4">Ford</option>
+                    <option value="5">Honda</option>
+                    <option value="6">Jaguar</option>
+                    <option value="7">Land Rover</option>
+                    <option value="8">Mercedes</option>
+                    <option value="9">Mini</option>
+                    <option value="10">Nissan</option>
+                    <option value="11">Toyota</option>
+                    <option value="12">Volvo</option>
+                </select>
+          </div>
+         </div>
+      </div> 
      
     :
     <div className='fixed w-[100%]'>
