@@ -27,6 +27,7 @@ function Navbar() {
     {!isTransparet ?  
     
       <div className=''>
+        
         <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
            <div className='flex flex-row gap-3 text-white'>
                 <button><FontAwesomeIcon icon={faFacebookF} /></button>
@@ -141,7 +142,6 @@ function Navbar() {
 
          </div>
 
-
       </div> 
 
 
@@ -150,14 +150,13 @@ function Navbar() {
     :
     <div className='fixed w-[100%]'>
 
-
       <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
               <div className='flex flex-row gap-3 text-white'>
                     <button><FontAwesomeIcon icon={faFacebookF} /></button>
                     <button> <FontAwesomeIcon icon={faTwitter} /></button>
                     <button>  <FontAwesomeIcon icon={faInstagram} /></button>
                     <button> <FontAwesomeIcon icon={faSkype} /></button>
-                  <button> <FontAwesomeIcon icon={faYoutube} /></button>
+                    <button> <FontAwesomeIcon icon={faYoutube} /></button>
                     <button> <FontAwesomeIcon icon={faTelegram} /></button>
                   
               </div>
@@ -166,38 +165,41 @@ function Navbar() {
               </div>
       </div>  
   
-      <div className={`h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[5%]  w-[100%] bg-white flex flex-row items-center` }>
+      <div className={`h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[4%] lg:max-xl:pr-[2px] w-[100%] bg-white flex flex-row items-center` }>
           
           <div className='flex'>
-                    <img src={logo1} className='h-[100px] '/>
-                    <div className=' flex flex-col justify-center gap-1'>
-                        <h1 className='font-bold text-3xl '>Travel Agency</h1>
-                        <p className=''>Ethiopian Tour and travel website</p>
-
+                    <img src={logo1} className='h-[100px]  lg:max-xl:pt-1'/>
+                    <div className=' flex flex-col justify-center gap-1 '>
+                        <h1 className='font-bold text-3xl  '>Travel Agency</h1>
+                        <p className=''>Ethiopian Tour and Travel Website</p>
                     </div>
           </div>
-          <div>
-              <nav className='flex flex-row gap-4 text-lg font-semibold'>
-                <a href='/'>Home</a>
+          <div className=''>
+              <nav className='flex flex-row gap-4  text-lg font-semibold max-lg:hidden '>
+                <a href='/' className='lg:max-xl:hidden'>Home</a>
                 <a href='/'>Type</a>
                 <a href='/'>Country</a>
                 <a href='/'>Packages</a>
                 <a href='/'>Service</a>
-                <a href='/'>About-Us</a>
+                <a href='/'>AboutUs</a>
                 <a href='/'>Blog</a>
                 <a href='/'>Contact</a>
                 <button className='px-8 bg-[#2cab81] py-1'><a href='/'>Login</a></button>
 
-
-
               </nav> 
+
+              <button className='hidden max-lg:flex flex-row'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+
+             </button>
+
+
           </div>    
       
       </div>
      
-      
-      
-
 
     </div>
     
