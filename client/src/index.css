@@ -5,4 +5,27 @@
 
 
 
+.homee{
+    position: relative;
+
+}
+
+.homee::before{
+
+    background-image:url('../src/assets/h5.jpg') ;
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* opacity: 0.5; */
+    background-size: cover;
+
+
+}
+
+.inner,.navInner{
+    isolation: isolate;
+
+
+}
+
 

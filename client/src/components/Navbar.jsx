@@ -9,7 +9,7 @@ function Navbar() {
 
     useEffect(()=>{
         const handleTrasparency=()=>{
-            if(window.scrollY >= 250){
+            if(window.scrollY >=110){
                 setIsTransparent(true)
             }else{
                 setIsTransparent(false)
@@ -22,12 +22,12 @@ function Navbar() {
 
 
   return (
-    <div>
+    <div className=''>
 
     {!isTransparet ?  
     
-      <div className=''>
-        
+      <div className='navInner'>
+
         <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
            <div className='flex flex-row gap-3 text-white'>
                 <button><FontAwesomeIcon icon={faFacebookF} /></button>
@@ -58,7 +58,7 @@ function Navbar() {
              </div>
           </div>
 
-         <div className="h-16 max-lg:flex max-lg:flex-row max-lg:justify-end max-lg:items-center max-lg:mr-[5%]">
+         <div className=" bg-white h-14 max-lg:flex max-lg:flex-row max-lg:justify-end max-lg:items-center max-lg:mr-[5%]">
            
            <button className='hidden max-lg:flex flex-row'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -67,7 +67,7 @@ function Navbar() {
 
           </button>
 
-           <div className=" hidden lg:flex flex-row  gap-3 justify-center pt-[1%] text-lg font-semibold">
+           <div className=" hidden lg:flex flex-row  gap-3 justify-center pt-[0.5%] text-lg font-semibold">
 
                 <select className='border-none outline-none'>
                     <option value="0"><a href='/'>Type</a></option>
@@ -144,11 +144,10 @@ function Navbar() {
 
       </div> 
 
-
-
      
     :
-    <div className='fixed w-[100%]'>
+    
+    <div className='fixed  w-[100%] navInner'>
 
       <div className={`flex h-7 bg-gradient-to-b from-[#218B67] to-[#339e7a]   w-[100%] justify-around`}>         
               <div className='flex flex-row gap-3 text-white'>
@@ -165,7 +164,7 @@ function Navbar() {
               </div>
       </div>  
   
-      <div className={`h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[4%] lg:max-xl:pr-[2px] w-[100%] bg-white flex flex-row items-center` }>
+      <div className={` bg-white h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[4%] lg:max-xl:pr-[2px] w-[100%]  flex flex-row items-center` }>
           
           <div className='flex'>
                     <img src={logo1} className='h-[100px]  lg:max-xl:pt-1'/>
