@@ -9,7 +9,7 @@ function Navbar() {
 
     useEffect(()=>{
         const handleTrasparency=()=>{
-            if(window.scrollY >=110){
+            if(window.scrollY >=150){
                 setIsTransparent(true)
             }else{
                 setIsTransparent(false)
