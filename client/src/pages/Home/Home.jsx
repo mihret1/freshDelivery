@@ -11,14 +11,13 @@ function Home() {
 
 
   return (
-  <div>
+  <>
 
     <div className='homee  h-[700px]  bg-no-repeat   ' >
-        <Navbar />
-      
-      <div className="inner   ">
+        <Navbar /> 
+        <div className="inner   ">
        
-          <div className="ml:w-[60%] flex flex-col gap-11 pt-12 pl-7"> 
+          <div className="ml:w-[60%] flex flex-col gap-10 pt-10 pl-7 inner"> 
              <h1 className=' font-bold text-3xl '>
                     There`s a World of Trips Out There. Bring Us With You. Let`s Go.
             </h1>
@@ -52,13 +51,12 @@ function Home() {
             </div>
 
           </div>  
-      </div>
+     
+     </div>
     
     </div>
-    
-   <div className='h-[6000px] bg-red-400'></div>
-
-   </div>
+  
+   </>
     )
 }
 
