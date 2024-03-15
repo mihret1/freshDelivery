@@ -7,6 +7,10 @@
 
 .homee{
     position: relative;
+    /* background-color: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,1)); */
+
+    /* background-color:black */
+
 
 }
 
@@ -16,7 +20,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    /* opacity: 0.5; */
+    opacity: 0.5;
     background-size: cover;
 
 
@@ -25,7 +29,24 @@
 .inner,.navInner{
     isolation: isolate;
 
+}
+
+.search{
+    background-color: rgba(250, 255, 255,0.6);
 
 }
+
+/* .pO{
+    background-color: rgba(250, 255, 255,0.5);
+    --mask: 
+    linear-gradient(to left,#0000 30px,#000 0),
+    radial-gradient(30px,#000 98%,#0000) right/60px 55.5px;
+    -webkit-mask: var(--mask);
+          mask: var(--mask);
+} */
+
+/* .opa{
+    opacity: 0.4;
+} */
 
 
