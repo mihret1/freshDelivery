@@ -49,6 +49,7 @@ function Home() {
                           
                       <button className="bg-[#408D65] px-9  text-white py-2 w-[25%] " >Search</button>
                         
+                        
               </div>
 
             </div>  
