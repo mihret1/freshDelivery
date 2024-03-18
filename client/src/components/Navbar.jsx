@@ -43,18 +43,18 @@ function Navbar() {
            </div>
         </div>
 
-          <div className=" bg-white  border-b h-[120px] flex  justify-around items-center ">
+          <div className=" bg-white  border-b h-[120px] flex  justify-around items-center xs:max-xss:flex-col ">
             <div className='flex'>
                 <img src={logo1} className='h-[100px] max-md:h-[80px]'/>
                 <div className=' flex flex-col justify-center gap-1'>
-                    <h1 className='font-bold text-3xl max-md:text-2xl'>Travel Agency</h1>
+                    <h1 className='font-bold text-3xl max-md:text-2xl xs:max-sm:text-xl'>Travel Agency</h1>
                     <p className=''>Ethiopian Tour and travel website</p>
 
                 </div>
              </div>
-             <div className='flex flex-col items-end max-sm:mr-2'>
+             <div className='flex flex-col items-end max-sm:mr-2 xs:max-sm:items-start xs:max-sm:pl-10 '>
                 <p>call us? we are open 24/7</p>
-                <h1 className='text-green-700 font-bold text-xl max-md:text-lg'>(+251)934567892 </h1>
+                <h1 className='text-green-700 font-bold text-xl max-md:text-lg xs:max-sm:text-sm'>(+251)934567892 </h1>
              </div>
           </div>
 
@@ -164,12 +164,14 @@ function Navbar() {
               </div>
       </div>  
   
+
+
       <div className={` bg-white h-[110px] ${isTransparet && 'fixed'} justify-between pl-[1%] pr-[4%] lg:max-xl:pr-[2px] w-[100%]  flex flex-row items-center` }>
           
           <div className='flex'>
                     <img src={logo1} className='h-[100px]  lg:max-xl:pt-1'/>
                     <div className=' flex flex-col justify-center gap-1 '>
-                        <h1 className='font-bold text-3xl  '>Travel Agency</h1>
+                        <h1 className='font-bold text-3xl xs:max-sm:text-2xl '>Travel Agency</h1>
                         <p className=''>Ethiopian Tour and Travel Website</p>
                     </div>
           </div>

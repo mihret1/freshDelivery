@@ -33,7 +33,7 @@ function Home() {
                 </div>   
               </div>
                 
-              <div className="text-xl font-bold h-24 ml:max-lg:w-[95%] w-[81%] max-md:w-[98%] search flex gap-5 items-center justify-center">
+              <div className="text-xl font-bold h-24 ml:max-lg:w-[95%] w-[81%] max-md:w-[98%] search flex xs:max-sm:flex-col xs:max-sm:gap-1 xs:max-sm:h-28 xs:max-sm:justify-center xs:max-sm:items-center gap-5 items-center justify-center">
                         <div className=" bg-white h-12 w-[66%] flex flex-row items-center justify-around">
                           <div>
                             {  !search && <SearchIcon />}
