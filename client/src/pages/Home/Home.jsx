@@ -33,8 +33,8 @@ function Home() {
                 </div>   
               </div>
                 
-              <div className="text-xl font-bold h-24 ml:max-lg:w-[95%] w-[81%] max-md:w-[98%] search flex xs:max-sm:flex-col xs:max-sm:gap-1 xs:max-sm:h-28 xs:max-sm:justify-center xs:max-sm:items-center gap-5 items-center justify-center">
-                        <div className=" bg-white h-12 w-[66%] flex flex-row items-center justify-around">
+              <div className="text-xl font-bold h-24 ml:max-lg:w-[95%] px-3 w-[85%] max-md:w-[98%] search flex xs:max-sm:flex-col xs:max-sm:gap-1 xs:max-sm:h-28 xs:max-sm:justify-center xs:max-sm:items-center gap-5 items-center justify-center">
+                        <div className=" bg-white h-12 w-[72%]  xs:max-xss:w-[99%] xss:max-sm:w-[92%] flex flex-row items-center justify-around">
                           <div>
                             {  !search && <SearchIcon />}
                             <input 
@@ -47,7 +47,7 @@ function Home() {
                           {search && <IconButton onClick={()=>setSearch('')}><CloseIcon /></IconButton> }
                         </div>
                           
-                      <button className="bg-[#408D65] px-9  text-white py-2 w-[25%] " >Search</button>
+                      <button className="bg-[#408D65] px-9 max-sm:px-5 xs:max-xss:px-2  text-white py-2 w-[25%] " >Search</button>
                         
                         
               </div>
