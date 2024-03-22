@@ -6,6 +6,17 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import { IconButton } from "@mui/material";
 
+import img1 from '../../assets/catagories/t2.jpg'
+import img2 from '../../assets/catagories/t3.jpg'
+import img3 from '../../assets/catagories/t6.jpg'
+import img4 from '../../assets/catagories/t7.jpg'
+import img5 from '../../assets/catagories/t9.jpg'
+import img6 from '../../assets/catagories/t10.jpg'
+import img7 from '../../assets/catagories/t13.png'
+import img8 from '../../assets/catagories/t15.jpg'
+
+
+
 function Home() {
   const [search,setSearch]=useState('')
 
@@ -59,7 +70,62 @@ function Home() {
    </div>
    
    {/* part two */}
-   <div className="h-[1000px]"></div>
+   <div className="flex flex-col gap-7 items-center pt-16 px-3  ">
+    <h1 className=" text-3xl  font-semibold"> Visit Amazing Place in Ethiopia</h1>
+    <div className="grid grid-cols-8 max-xss:grid-cols-3  xss:max-sm:grid-cols-4 sm:max-md:grid-cols-6 md:max-lg:grid-cols-7 ">
+      
+      <div > 
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Crafts
+          <img src={img1} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+      <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Volcanos
+          <img src={img2} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+       <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Parks
+          <img src={img3} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+       <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Water Bodies
+          <img src={img4} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+       <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Muesuem
+          <img src={img5} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+       <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Churches
+          <img src={img6} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+       <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Spa
+          <img src={img7} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div> 
+      <div >
+        <a href='/' className=" flex flex-col items-center text-xl font-semibold">
+           Hotels
+          <img src={img8} className="rounded-full w-24 h-24 "/>
+        </a>
+      </div>
+    
+    </div>
+
+   </div>
   
    </div>
     )
